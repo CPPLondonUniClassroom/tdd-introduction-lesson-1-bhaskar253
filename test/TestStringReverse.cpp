@@ -25,6 +25,6 @@ TEST_CASE("We recieve the correct reversed string from StringReverse", "[stringr
 TEST_CASE("We can move from a StringReverse into a string of our own", "[stringreverse]") {
 	StringReverse s{"LondonUni"};
 	std::string out = std::move(s);
-	CHECK(out == "inUnodnoL);
+	CHECK(out == "inUnodnoL");
 	CHECK(s.empty());
 }
