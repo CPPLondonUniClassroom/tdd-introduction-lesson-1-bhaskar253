@@ -15,3 +15,9 @@ TEST_CASE("A StringReverse constructed with 'Hello World' becomes 'dlroW olleH'"
 	CHECK(s == "dlroW olleH");
 	CHECK_FALSE(s.empty());
 }
+
+TEST_CASE("We recieve the correct reversed string from StringReverse", "[stringreverse]") {
+	const StringReverse s{"LondonUni"};
+	std::string out = s;
+	CHECK(out == "inUnodnoL");
+}
