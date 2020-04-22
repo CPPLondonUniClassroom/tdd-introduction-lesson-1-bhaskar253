@@ -11,5 +11,6 @@ TEST_CASE("A default constructed StringReverse is empty", "[stringreverse]") {
 
 TEST_CASE("A StringReverse constructed with 'Hello World' becomes 'dlroW olleH'", "[stringreverse]") {
     const StringReverse s{"Hello World"};
-    //TODO: test it
+	CHECK(s == "dlroW olleH");
+	CHECK_FALSE(s.empty());
 }
